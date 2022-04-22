@@ -65,6 +65,42 @@ body {
   width: 100%;
 }
 
+/* HUVUDSIDAN */
+#Bild-Slider {
+  margin: 0;
+  opacity: 1;
+  display: block;
+  text-align: center;
+  padding-bottom: 64px;
+}
+.slider-bild {
+  width: 100%;
+  height: 500px;
+}
+.slider-titel {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  right: 45%;
+}
+
+.långbild-container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  float: center;
+}
+
+.span-långbild {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.långbild {
+  width: 1000px;
+  height: 200px;
+  border-radius: 20px;
+}
+
 /* SORTIMENT DELEN */
 #main {
   padding-bottom: 64px;
@@ -96,6 +132,7 @@ body {
 
 .underlinje {
   border-bottom: 3px solid;
+  padding-bottom: 75px;
 }
 
 .faktaruta {
@@ -157,6 +194,46 @@ body {
 @media (max-width: 653px) {
   #navbar {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 1000px) {
+  .långbild {
+    width: 900px;
+  }
+}
+@media (max-width: 900px) {
+  .långbild {
+    width: 800px;
+  }
+  .slider-bild {
+    height: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .långbild {
+    width: 700px;
+  }
+}
+@media (max-width: 700px) {
+  .långbild {
+    width: 600px;
+  }
+  .slider-bild {
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .långbild {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .långbild {
+    width: 420px;
+  }
+  .slider-bild {
+    height: 200px;
   }
 }
 
