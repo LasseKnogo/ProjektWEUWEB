@@ -236,6 +236,14 @@ body {
     height: 200px;
   }
 }
+@media (max-width: 400px) {
+  .långbild {
+    width: 380px;
+  }
+  .slider-bild {
+    height: 200px;
+  }
+}
 
 /* NAVBAR (tagen från internet) */
 
