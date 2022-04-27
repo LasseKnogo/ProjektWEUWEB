@@ -46,6 +46,11 @@ body {
   width: 168px;
 }
 
+.logo-cart{
+  margin:0px 0 0;
+  height: 80px;
+  width: 80px;
+}
 .kol {
   display: block;
   float: left;
@@ -152,10 +157,17 @@ body {
   overflow: hidden;
 }
 
+
+/* INFORMATIONS SIDAN*/
+.infodiv{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* FOOTER */
 
 #footer-wrapper {
-  margin: 0 auto;
+  margin-top:50px;
   padding: 20px 0;
   float: left;
   width: 100%;
@@ -360,4 +372,16 @@ body {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+
+/* IKONER */
+
+.fa-solid{
+font-size: 20px;
+width:20px;
+height:20px;
+}
+
+.fa-cart-shopping{
+
 }
