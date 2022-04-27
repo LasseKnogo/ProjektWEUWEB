@@ -42,14 +42,21 @@ body {
 
 .logo {
   margin: 0px 0 0;
+}
+
+.logo-logotyp {
   height: 70px;
   width: 168px;
 }
 
-.logo-cart{
-  margin:0px 0 0;
+.logo-cart {
   height: 80px;
   width: 80px;
+}
+
+.logo-login {
+  height: 55px;
+  width: 55px;
 }
 .kol {
   display: block;
@@ -157,22 +164,207 @@ body {
   overflow: hidden;
 }
 
+.pris {
+  height: 30px;
+  margin: 0;
+}
+
+.köpknapp[type="button"] {
+  width: 50px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 3px;
+  margin: 0;
+  float: right;
+}
 
 /* INFORMATIONS SIDAN*/
-.infodiv{
+.infodiv {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+/* SHOPPING CART*/
+
+.cart-wrapper {
+  width: 100%;
+  padding: 75px 0 0 0;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.cart-image {
+  width: 75px;
+  height: auto;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.cart-row {
+  display: flex;
+}
+.cart-item {
+  width: 45%;
+}
+.cart-price {
+  width: 20%;
+  font-size: ;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.btn-tabort {
+  width: 50px;
+  background-color: #eb5757;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 4px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.btn-tabort:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-item-title {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #eee;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  font-size: 1.5em;
+}
+
+.cart-finish-purchase {
+  width: 200px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* LOGIN */
+
+.formulär {
+  display: flex;
+  padding: 10%;
+  justify-content: center;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+input[type="text"]:focus {
+  background-color: rgb(211, 211, 211);
 }
 
 /* FOOTER */
 
 #footer-wrapper {
-  margin-top:50px;
-  padding: 20px 0;
+  margin-top: 50px;
+  padding-top: 20px;
   float: left;
   width: 100%;
   min-height: 300px;
-  bottom: 0;
+  bottom: 0px;
   background-color: black;
 }
 
@@ -339,7 +531,7 @@ body {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 80px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -372,16 +564,4 @@ body {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-}
-
-/* IKONER */
-
-.fa-solid{
-font-size: 20px;
-width:20px;
-height:20px;
-}
-
-.fa-cart-shopping{
-
 }

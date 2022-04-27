@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="javakod.js" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,48 +53,24 @@
       </ul>
     </section>
 
-
-    <section class="cart-wrapper group">
-      <div id="main" class="sektion group">
-        <h1 class="rubrik" id="center">Varor</h1>
-        <div class="cart-row">
-          <span class="cart-item cart-header cart-column">ITEM</span>
-          <span class="cart-price cart-header cart-column">PRIS</span>
-          <span class="cart-quantity cart-header cart-column">KVANTITET</span>
-        </div>
-        <div class="cart-items">
-          <div class="cart-row">
-            <div class="cart-item cart-column">
-              <img src="Talking_Heads_77.jpg" class="cart-image">
-              <span class="cart-item-title">Talking Heads - Talking Heads:77</span>
-            </div> 
-            <span class="cart-price cart-column">289kr</span>
-            <div class="cart-quantity cart-column">
-              <input class="cart-quantity-input" type="number" value="1">
-              <button class="btn-tabort"type="button">TA BORT</button>
-            </div>
-          </div>
-          <div class="cart-row">
-            <div class="cart-item cart-column">
-              <img src="vemod-venter-pa-stormene.jpg" class="cart-image">
-              <span class="cart-item-title">Vemod - Venter Pa Stormene</span>
-            </div> 
-            <span class="cart-price cart-column">349kr</span>
-            <div class="cart-quantity cart-column">
-              <input class="cart-quantity-input" type="number" value="2">
-              <button class="btn-tabort"type="button">TA BORT</button>
-            </div>
-          </div>
-        </div>
+    <div class="formulär">
+        <form action="hemsida.html">
+          <label for="Ruta1" class="formulärtext">Användarnamn:</label><br />
+          <input type="text" id="Ruta1" class="textruta , formulärtext" /><br />
+  
+          <label for="Ruta2" class="formulärtext">Email:</label><br />
+          <input type="email" id="Ruta2" class="textruta, formulärtext" /><br />
+  
+          <label for="Ruta3" class="formulärtext">Lösenord:</label><br />
+          <input
+            type="password"
+            id="Ruta3"
+            class="textruta , formulärtext"
+          /><br />
+  
+          <input type="submit" value="Bekräfta" class="textruta , submitext" />
+        </form>
       </div>
-      <div class="cart-total sektion group">
-        <strong class="cart-total-title">TOTALT:</strong>
-        <span class="cart-total-price">SEK 698</span>
-      </div>
-      <div id="center">
-        <button class="cart-finish-purchase">SLUTFÖR KÖP</button>
-      </div>
-    </section>
 
     <div id="footer-wrapper">
       <div class="sektion , group"></div>
