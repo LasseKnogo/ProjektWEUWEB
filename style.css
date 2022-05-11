@@ -364,7 +364,7 @@ input[type="text"]:focus {
   height: 60px;
 }
 
-/* MEDIA QUERIES (funkar typ) */
+/* MEDIA QUERIES */
 
 @media (max-width: 996px) {
   .spanner {
