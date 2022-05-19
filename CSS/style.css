@@ -9,6 +9,25 @@ body {
   margin: 0 0 0 0;
 }
 
+.login-success{
+  background: linear-gradient(-45deg, #ff0000, #ff7300, #fbff00, #3cff00, rgb(0, 255, 200),rgb(0, 174, 255) , rgb(0, 47, 255),rgb(162, 2, 255));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 95vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 /* LOGGA + KOLUMNER*/
 
@@ -51,23 +70,16 @@ body {
 }
 
 /* HUVUDSIDAN */
-#Bild-Slider {
+.bild-slider {
   margin: 0;
   opacity: 1;
   display: block;
   text-align: center;
-  padding-bottom: 64px;
-}
-.slider-bild {
-  width: 100%;
+  padding-bottom: px;
   height: 500px;
+  background-image: url(/IMG/gettyimages-506033809_2000x500.jpg);
 }
-.slider-titel {
-  position: absolute;
-  top: 20%;
-  left: 45%;
-  right: 45%;
-}
+
 
 .långbild-container {
   height: 500px;
@@ -406,9 +418,7 @@ input[type="text"]:focus {
   .långbild {
     width: 800px;
   }
-  .slider-bild {
-    height: 400px;
-  }
+
 }
 @media (max-width: 800px) {
   .långbild {
@@ -418,9 +428,6 @@ input[type="text"]:focus {
 @media (max-width: 700px) {
   .långbild {
     width: 600px;
-  }
-  .slider-bild {
-    height: 300px;
   }
 }
 @media (max-width: 600px) {
@@ -432,16 +439,10 @@ input[type="text"]:focus {
   .långbild {
     width: 420px;
   }
-  .slider-bild {
-    height: 200px;
-  }
 }
 @media (max-width: 400px) {
   .långbild {
     width: 380px;
-  }
-  .slider-bild {
-    height: 200px;
   }
 }
 

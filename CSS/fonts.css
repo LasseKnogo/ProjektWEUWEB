@@ -21,7 +21,17 @@ text-decoration: 0;
   font-size: 15px;
 }
 
+.huvudrubrik{
+  font-size: 50px;
+  padding-top: 250px;
+  color:white;
+  margin:0px;
+}
 
+.lyckorubrik{
+  font-size: 90px;
+  color:rgb(0, 0, 0);
+}
 .rubrik {
   color: grey;
   font-size: 30px;
